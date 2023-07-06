@@ -9,7 +9,7 @@ This project is a clone of the [Infobae website](https://www.infobae.com/)
 git clone https://github.com/JeroPratto/clon-infobae.git
 # Install
 npm install
-# Create a .env file to use environment variables. The env-example file provides instructions on how to configure it.
+# Add your api key in getPosts.ts
 # Run
 npm run dev
 ```
@@ -18,7 +18,6 @@ npm run dev
 
 - Next.js
 - Typescript
-- Dotenv
 
 ## This is the final result.
 
