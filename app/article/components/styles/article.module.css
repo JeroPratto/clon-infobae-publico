@@ -1,0 +1,38 @@
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin-bottom: 100px;
+	padding: 0 15px;
+}
+
+.parrafo {
+	margin-bottom: 24px;
+	font-size: 22px;
+	text-align: left;
+	color: var(--text-color);
+	font-weight: 300;
+	line-height: 1.7em;
+}
+.parrafo span {
+	color: var(--title-color);
+	font-weight: bold;
+}
+
+.description {
+	font-size: 14px;
+	margin: 12px 0 24px 0;
+	font-weight: 300;
+}
+
+.containerImg {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+@media screen and (max-width: 575px) {
+	.parrafo {
+		font-size: 18px;
+		line-height: 1.6em;
+	}
+}

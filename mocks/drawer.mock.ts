@@ -1,0 +1,27 @@
+const drawerMock = [
+	'Últimas Noticias',
+	'Dengue',
+	'Dólar hoy',
+	'Elecciones 2023',
+	'Economía',
+	'Newsletters',
+	'Deportes',
+	'Mundo',
+	'Policiales',
+	'Tendencias',
+	'Teleshow',
+	'Educación',
+	'Leamos',
+	'México',
+	'Colombia',
+	'Perú',
+	'Qué puedo ver',
+	'Tecno',
+	'Campo',
+	'Judiciales',
+	'Salud',
+	'Cultura',
+	'Virales',
+]
+
+export default drawerMock

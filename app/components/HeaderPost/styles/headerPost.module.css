@@ -1,0 +1,147 @@
+.container {
+	margin-top: 75px;
+	width: 100%;
+	max-width: var(--max-width);
+	padding: 0 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1em;
+	margin-bottom: 1em;
+}
+
+/* firtsPost */
+.firtsPost {
+	grid-column: span 2;
+	grid-row: span 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	border-bottom: 1px solid #d5d5d5;
+	cursor: pointer;
+}
+
+.containerImgFP {
+	position: relative;
+	width: 100%;
+	padding-bottom: 45%;
+}
+
+.containerImgFP img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 10px;
+}
+.cotainerInfoFP {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 10px;
+}
+.titleFP {
+	color: var(--title-color);
+	font-size: 2.8em;
+}
+.descFP {
+	padding: 20px 0;
+	font-weight: 400;
+	color: var(--text-color);
+	font-size: 1.15em;
+}
+.authorFP {
+	color: var(--text-color);
+	font-size: 1.15em;
+	padding-bottom: 15px;
+}
+.authorFP span {
+	font-weight: 600;
+}
+
+/* lateral post */
+.containerLP {
+	padding-top: 10px;
+	height: 100%;
+	grid-row: span 2;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.lateralPost {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	height: 50%;
+	border-bottom: 1px solid #d5d5d5;
+	cursor: pointer;
+}
+.titleLP {
+	color: var(--title-color);
+	font-size: 1.5em;
+}
+.containerImgLP {
+	position: relative;
+	width: 100%;
+	padding-bottom: 55.25%;
+}
+.containerImgLP img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 990px) {
+	.container {
+		grid-template-columns: 50% 50%;
+		gap: 0;
+	}
+	.firtsPost {
+		grid-row: span 2;
+		grid-column: 1/-1;
+	}
+	.containerLP {
+		grid-column: span 2;
+		grid-row: span 1;
+		flex-direction: row;
+	}
+	.lateralPost {
+		width: 50%;
+		height: auto;
+	}
+	.titleLP {
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.titleFP {
+		font-size: 1.9em;
+	}
+	.descFP {
+		font-size: 0.9em;
+	}
+	.authorFP {
+		font-size: 0.9em;
+	}
+	.titleLP {
+		font-size: 1.3em;
+	}
+	.containerLP {
+		flex-direction: column;
+	}
+	.lateralPost {
+		width: 100%;
+	}
+}
